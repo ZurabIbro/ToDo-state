@@ -1,0 +1,30 @@
+.form{
+    margin-top: 100px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    padding: 8px 10px ;
+    font-size: 22px;
+    border-radius: 5px ;
+    border-color: blueviolet;
+
+}
+button{
+    margin-left: 10px;
+    font-size: 22px;
+    border-radius: 5px;
+    border-color: blueviolet;
+    background-color: white;
+}
+hr{
+    
+}
+body{
+    
+}
+.list{
+    margin-left: 42%;
+}
