@@ -8,6 +8,7 @@ const arr = [
 
 const checkTodo = function(i) {
     arr[i].done = !arr[i].done
+    
 }
 const rem = function (i) {
     arr.splice(i, 1)
@@ -35,16 +36,17 @@ const render = (tasks) => {
     list.innerHTML = ''
     tasks.forEach((i, index) => {
         const checkBox = document.createElement('input')
+        
         checkBox.type = 'checkBox'
         checkBox.checked = i.done
 
         checkBox.addEventListener('click', () => {
             checkTodo(index)
-            
         })
         const delButton = document.createElement('button')
         delButton.textContent = 'x'
         let textList = document.createElement('p')
+        textList.classList.add('text_list')
         textList.textContent = i.text
         textList.style.fontFamily = 'cursive'
         list.append(textList)
@@ -53,7 +55,9 @@ const render = (tasks) => {
 
         delButton.addEventListener('click', () => {
         rem(index)
+        
         })
+       
     })
     
    
